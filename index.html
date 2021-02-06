@@ -8,18 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="nav">
-            <a class="nav-link active" href="#">
+          <!-- Start Navbar -->
+    <div class="container" id="top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="Logo">
-            </a>
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Shop</a>
-            <a class="nav-link" href="#">Backpack</a>
-            <a class="nav-link" href="#">Subscribe</a>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="shoes#">Shoes</a>
+                  <a class="nav-link" href="#backpack">Backpack</a>
+                  <a class="nav-link" href="#subscribe">Subscribe</a>
+                </div>
+            </div>
           </nav>
     </div>
+          <!-- End Navbar -->
 
+        <!-- Start carousel slide -->
     <div class="container">
         <div id="carouselExampleFade" class="carousel slide carousel-fade pink-bg" data-ride="carousel">
             <div class="carousel-inner">
@@ -28,8 +38,8 @@
                     <div class="col-md-7">
                         <h1>Mega LED TV for Sports</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quis explicabo dolor maxime veniam harum!</p>
-                        <h2 class="price">$1200</h2>
-                        <button type="button" class="btn">Buy Now</button>
+                        <h1 class="price">$1200</h1>
+                        <button type="button" class="buy-button">Buy Now</button>
                     </div>
                     <div class="col-md-5">
                         <img src="img/tv.png" class="d-block w-100" alt="tv">
@@ -41,8 +51,8 @@
                     <div class="col-md-7">
                         <h1>Cool Dude Headphone</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquid dignissimos assumenda possimus dolore. At voluptatem quasi laudantium laboriosam ad.!<p>
-                        <h2 class="price">$450</h2>
-                        <button type="button" class="btn">Buy Now</button>
+                        <h1 class="price">$450</h1>
+                        <button type="button" class="buy-button">Buy Now</button>
                     </div>
                     <div class="col-md-5">
                         <img src="img/headphone.png" class="d-block w-100" alt="headphone">
@@ -54,8 +64,8 @@
                     <div class="col-md-7">
                         <h1>X-Box For Your Living Room</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut dicta, iusto quibusdam officia expedita earum, alias autem dolorem modi saepe, nisi sunt quaerat eos nobis numquam? Minima, quia repellat..<p>
-                        <h2 class="price">$600</h2>
-                        <button type="button" class="btn">Buy Now</button>
+                        <h1 class="price">$600</h1>
+                        <button type="button" class="buy-button">Buy Now</button>
                     </div>
                     <div class="col-md-5">
                         <img src="img/xbox.png" class="d-block w-100" alt="xbox">
@@ -73,11 +83,13 @@
             </a>
           </div>
     </div>
+          <!-- End carousel slide -->
 
+          <!-- Start Flex -->
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="d-flex justify-content-between align-items-center cat1" id="category">
+            <div class="col-md-4" id="category">
+                <div class="d-flex justify-content-between align-items-center cat1">
                     <h1>Watch</h1>
                     <img src="img/watch.png" alt="">
                 </div>
@@ -96,8 +108,10 @@
             </div>
         </div>
     </div>
+          <!-- End Flex -->
 
-    <div class="container">
+          <!-- Start Shoes Card -->
+    <div class="container" id="shoes">
         <h1>Shoes</h1>
         <div class="card-deck">
             <div class="card">
@@ -106,7 +120,7 @@
                 <h5 class="card-title">Supply 350</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <h4>$120</h4>
-                <button type="button" class="btn">Buy Now >>></button>
+                <button type="button" class="buy-button">Buy Now >>></button>
               </div>
             </div>
             <div class="card">
@@ -115,7 +129,7 @@
                 <h5 class="card-title">Nick 360</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <h4>$320</h4>
-                <button type="button" class="btn">Buy Now >>></button>
+                <button type="button" class="buy-button">Buy Now >>></button>
               </div>
             </div>
             <div class="card">
@@ -124,57 +138,67 @@
                 <h5 class="card-title">Red Airmax</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <h4>$350</h4>
-                <button type="button" class="btn">Buy Now >>></button>
+                <button type="button" class="buy-button">Buy Now >>></button>
               </div>
             </div>
           </div>
     </div>
+          <!-- End Shoes Card -->
 
-    <div class="container">
+          <!-- Start Backpack Card -->
+    <div class="container" id="backpack">
         <h1>Backpack</h1>
-        <div class="card-deck">
+          <div class="card-deck">
             <div class="card">
-              <img src="img/bag-1.png" class="card-img-top" alt="shoe-1">
-              <div class="card-body">
-                <h5 class="card-title">Red Laltu Bag</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <h4>$120</h4>
-                <button type="button" class="btn">Buy Now >>></button>
-              </div>
+                  <img src="img/bag-1.png" class="card-img-top" alt="bag-1">
+                <div class="card-body">
+                  <h5 class="card-title">Red Laltu Bag</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <br><br>
+                  <h4>$120</h4>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="buy-button">Buy Now >>></button>
+                </div>
             </div>
             <div class="card">
-              <img src="img/bag-2.png" class="card-img-top" alt="shoe-2">
-              <div class="card-body">
-                <h5 class="card-title">Blue Niltu Bag</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <h4>$320</h4>
-                <button type="button" class="btn">Buy Now >>></button>
-              </div>
+                  <img src="img/bag-2.png" class="card-img-top" alt="bag-2">
+                <div class="card-body">
+                  <h5 class="card-title">Blue Niltu Bag</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <br><br><br>
+                  <h4>$320</h4>
+                </div>
+               <div class="card-footer">
+                  <button type="button" class="buy-button">Buy Now >>></button>
+                </div>
             </div>
             <div class="card">
-              <img src="img/bag-3.png" class="card-img-top" alt="shoe-3">
-              <div class="card-body">
-                <h5 class="card-title">Black Kaltu Bag</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <h4>$169</h4>
-                <button type="button" class="btn">Buy Now >>></button>
-              </div>
+                  <img src="img/bag-3.png" class="card-img-top" alt="bag-3">
+                <div class="card-body">
+                  <h5 class="card-title">Black Kaltu Bag</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <h4>$169</h4>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="buy-button">Buy Now >>></button>
+                </div>
             </div>
           </div>
     </div>
-
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center " id="subscribe">
-            <h1>LET'S STAY IN TOUCH</h1>
-            <h6>Get updates on sales, specials and more</h6>
-            <input type="text">
-            <br>
-            <button type="button" class="btn">Submit</button>
+            <!-- End Backpack Card -->
+            <!-- Start subscribe -->
+    <div class="container pink-bg d-flex flex-column justify-content-center align-items-center" id="subscribe">
+        <div>
+            <h2>LET'S STAY IN TOUCH</h2>
+            <h6 id="get-text">Get updates on sales, specials and more</h6>
+            <input class="email" type="text" placeholder="Email Address  ">
+            <input class="submit-button" type="submit" value="Submit">
         </div>
     </div>
-
+            <!-- End subscribe -->
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, velit.</p>
+        <small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
